@@ -1,0 +1,1 @@
+# Formeln der Clausius-Rankine-Prozesse
