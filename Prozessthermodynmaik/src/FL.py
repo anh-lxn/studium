@@ -1,13 +1,5 @@
 # Formeln der feuchten Luft
 
-# (4.1)
-def eq41x(mw, ml):
-    """Berechnet die Wasseranteile xi_W und xi_L gemäß Gl. (4.1)."""
-    """mw[kgW], ml[kgL]"""
-    """ x[kgW/kgL] """
-    x = mw / ml
-    return x
-
 # (4.5)
 def eq45x(p, ps, phi):
     """Wassergehalt x gemäß Gl. (4.5)."""

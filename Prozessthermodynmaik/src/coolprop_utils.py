@@ -1,7 +1,5 @@
 import CoolProp.CoolProp as CP
 
-import CoolProp.CoolProp as CP
-
 def get_saturation_properties(T=None, p=None, fluid="Water", display=False, return_value=None):
     """
     Sättigungseigenschaften (Flüssig ' / Dampf '') für Wasser nach IF97 mittels CoolProp.
