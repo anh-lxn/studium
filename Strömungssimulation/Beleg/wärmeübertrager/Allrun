@@ -1,0 +1,40 @@
+#!/bin/sh
+cd ${0%/*} || exit 1 # Run from this directory
+
+# Source tutorial run functions
+. $WM_PROJECT_DIR/bin/tools/RunFunctions
+
+# Get application directory
+application=$(getApplication)
+
+# Clean main case
+./Allclean
+
+# Clean meshing case and re-run meshing
+cd meshing
+./Meshclean
+./Meshrun
+cp -r constant/polyMesh ../constant/
+cd ..
+
+# Extrude side of 3D mesh to 2D mesh
+runApplication extrudeMesh
+
+# Configure patches
+runApplication createPatch -overwrite
+
+# Create .foam file for paraview
+paraFoam -touch -builtin
+
+# Run the simulation
+runApplication "$application" &
+
+# Wait for 1 sec
+sleep 1
+
+# Plot monitor data created by function objects
+foamMonitor -i 5 -r 1 -l postProcessing/residuals/*/residuals.dat &
+foamMonitor -i 5 -r 1 postProcessing/avgPres/*/surfaceFieldValue.dat
+foamMonitor -i 5 -r 1 postProcessing/forcesPipe/*/forces.dat
+
+#------------------------------------------------------------------------------

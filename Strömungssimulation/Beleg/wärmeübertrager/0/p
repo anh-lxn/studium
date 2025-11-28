@@ -1,0 +1,58 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  12
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format      ascii;
+    class       volScalarField;
+    object      p;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 2 -2 0 0 0 0];
+
+internalField   uniform 0;
+
+boundaryField
+{
+    // DONE: Wählen Sie eine geeignete RB
+    inlet
+    {
+        type            zeroGradient;
+    }
+
+    // DONE: Wählen Sie eine geeignete RB
+    outlet
+    {
+        type            fixedValue;
+        value           uniform 0;
+    }
+
+    // DONE: Wählen Sie eine geeignete RB
+    // INFO: Der Ausdruck "pipe.*" bezeichnet alle Patches, deren Name mit "pipe" beginnt
+    "pipe.*"
+    {
+        type            fixedFluxPressure; // druckgradient kommt aus der Geschwindgkeit -> kein fester Wert
+        value           uniform 0;
+    }
+
+    frontAndBack
+    {
+        type            empty;
+    }
+
+    cyclic_top
+    {
+        type            cyclic;
+    }
+    cyclic_bottom
+    {
+        type            cyclic;
+    }
+}
+
+// ************************************************************************* //
