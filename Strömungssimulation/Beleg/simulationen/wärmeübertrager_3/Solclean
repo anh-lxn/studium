@@ -8,11 +8,15 @@ cd ${0%/*} || exit 1    # Run from this directory
 pkill -x gnuplot
 pkill -x gnuplot_x11
 
-# clean main case
-cleanCase
 
-# clean meshing case
-cd meshing
-cleanCase
-cd ..
+# Do not clean completely, mesh is kept
+# Delete time directories
+foamListTimes -rm
+
+# Delete log-file
+rm log.foamRun
+
+# Delete postprocessing data
+rm -r postProcessing
+
 #------------------------------------------------------------------------------

@@ -1,0 +1,25 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  12
+     \\/     M anipulation  |
+-------------------------------------------------------------------------------
+Description
+    Calculates pressure and viscous forces over specified patches for a case
+    where the solver is incompressible; i.e., pressure is kinematic and has
+    units of m^2/s^2.
+
+\*---------------------------------------------------------------------------*/
+
+#includeEtc "caseDicts/functions/forces/forcesIncompressible.cfg"
+// DONE: Patch-Namen angeben, über die die Kräfte aufintegriert werden sollen, einer oder mehrere Einträge möglich.
+patches    (pipe-4); // Names of patches on which to calculate forces
+
+// DONE: Geben Sie hier die gegebene Dichte der Luft an in kg/m^3.
+rhoInf      1.2;
+
+// INFO: Dieser Eintrag kann ignoriert werden, er wird für die Berechnung von Momenten benötigt.
+CofR        (1.5 1.0 0);         // Centre of rotation; e.g., (0 0 0)
+
+// ************************************************************************* //
