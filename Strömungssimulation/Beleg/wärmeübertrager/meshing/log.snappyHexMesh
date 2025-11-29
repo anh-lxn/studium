@@ -7,10 +7,10 @@
 \*---------------------------------------------------------------------------*/
 Build  : 12-86e126a7bc4d
 Exec   : snappyHexMesh -overwrite
-Date   : Nov 28 2025
-Time   : 16:19:09
+Date   : Nov 29 2025
+Time   : 01:57:59
 Host   : "anh-MS-7E26"
-PID    : 49104
+PID    : 92432
 I/O    : uncollated
 Case   : /home/anh/Documents/studium/Strömungssimulation/Beleg/wärmeübertrager/meshing
 nProcs : 1
@@ -23,7 +23,7 @@ Create time
 
 Create mesh for time = 0
 
-Read mesh in = 0.022073 s
+Read mesh in = 0.023555 s
 Reading "snappyHexMeshDict"
 
 
@@ -32,11 +32,11 @@ Relative tolerance         : 1e-06
 Absolute matching distance : 6.61544e-07
 
 Reading refinement surfaces...
-Read refinement surfaces in = 0.016202 s
+Read refinement surfaces in = 0.020192 s
 
 Reading refinement regions...
 Refinement level 1 for all cells inside refinementBox
-Read refinement regions in = 3.8e-05 s
+Read refinement regions in = 3.5e-05 s
 
 Reading features...
 Read edgeMesh domain_a3_b1.eMesh
@@ -46,7 +46,7 @@ Read edgeMesh domain_a3_b1.eMesh
 
 Refinement level according to distance to "domain_a3_b1.eMesh" (2436 points, 2452 edges).
     level 0 for all cells within 0 metre.
-Read features in = 0.003825 s
+Read features in = 0.004111 s
 
 
 Determining initial surface intersections
@@ -56,7 +56,7 @@ Edge intersection testing:
     Number of edges             : 34830
     Number of edges to retest   : 34830
     Number of intersected edges : 384
-Calculated surface intersections in = 0.056719 s
+Calculated surface intersections in = 0.069449 s
 
 Initial mesh : cells:9800  faces:34830  points:15498
 Cells per refinement level:
@@ -91,7 +91,7 @@ domain:
 17    wall                pipe-4                        
 15    wall                pipe-5                        
 
-Added patches in = 0.000837 s
+Added patches in = 0.001056 s
 
 Selecting distributor none
 Cell selection insidePoints: 1((-0.106 0.002 0.001))
@@ -105,7 +105,7 @@ Feature refinement iteration 0
 ------------------------------
 
 Marked for refinement due to explicit features             : 0 cells.
-Determined cells to refine in = 0.017251 s
+Determined cells to refine in = 0.018769 s
 Selected for feature refinement : 0 cells (out of 9800)
 Stopping refining since too few cells selected.
 
@@ -115,13 +115,13 @@ Surface refinement iteration 0
 
 Marked for refinement due to surface intersection          : 448 cells.
 Marked for refinement due to curvature/regions             : 0 cells.
-Determined cells to refine in = 0.000834 s
+Determined cells to refine in = 0.000859 s
 Selected for refinement : 448 cells (out of 9800)
 Edge intersection testing:
     Number of edges             : 45894
     Number of edges to retest   : 14524
     Number of intersected edges : 1392
-Refined mesh in = 0.031477 s
+Refined mesh in = 0.037508 s
 After refinement surface refinement iteration 0 : cells:12936  faces:45894  points:20466
 Cells per refinement level:
     0	9352
@@ -132,13 +132,13 @@ Surface refinement iteration 1
 
 Marked for refinement due to surface intersection          : 0 cells.
 Marked for refinement due to curvature/regions             : 1520 cells.
-Determined cells to refine in = 0.002803 s
+Determined cells to refine in = 0.002923 s
 Selected for refinement : 1664 cells (out of 12936)
 Edge intersection testing:
     Number of edges             : 86232
     Number of edges to retest   : 53476
     Number of intersected edges : 5128
-Refined mesh in = 0.070836 s
+Refined mesh in = 0.085086 s
 After refinement surface refinement iteration 1 : cells:24584  faces:86232  points:37873
 Cells per refinement level:
     0	9208
@@ -150,13 +150,13 @@ Surface refinement iteration 2
 
 Marked for refinement due to surface intersection          : 0 cells.
 Marked for refinement due to curvature/regions             : 80 cells.
-Determined cells to refine in = 0.006983 s
+Determined cells to refine in = 0.008531 s
 Selected for refinement : 80 cells (out of 24584)
 Edge intersection testing:
     Number of edges             : 87972
     Number of edges to retest   : 6024
     Number of intersected edges : 5128
-Refined mesh in = 0.044693 s
+Refined mesh in = 0.049138 s
 After refinement surface refinement iteration 2 : cells:25144  faces:87972  points:38493
 Cells per refinement level:
     0	9208
@@ -168,7 +168,7 @@ Surface refinement iteration 3
 
 Marked for refinement due to surface intersection          : 0 cells.
 Marked for refinement due to curvature/regions             : 0 cells.
-Determined cells to refine in = 0.00626 s
+Determined cells to refine in = 0.006539 s
 Selected for refinement : 0 cells (out of 25144)
 Stopping refining since too few cells selected.
 
@@ -188,13 +188,13 @@ Shell refinement iteration 0
 
 Marked for refinement due to distance to explicit features : 0 cells.
 Marked for refinement due to refinement shells             : 2608 cells.
-Determined cells to refine in = 0.150453 s
+Determined cells to refine in = 0.153635 s
 Selected for internal refinement : 3801 cells (out of 23588)
 Edge intersection testing:
     Number of edges             : 169783
     Number of edges to retest   : 130696
     Number of intersected edges : 5136
-Refined mesh in = 0.139285 s
+Refined mesh in = 0.147001 s
 After refinement shell refinement iteration 0 : cells:50195  faces:169783  points:69643
 Cells per refinement level:
     0	6600
@@ -206,13 +206,13 @@ Shell refinement iteration 1
 
 Marked for refinement due to distance to explicit features : 0 cells.
 Marked for refinement due to refinement shells             : 0 cells.
-Determined cells to refine in = 0.011264 s
+Determined cells to refine in = 0.011753 s
 Selected for internal refinement : 54 cells (out of 50195)
 Edge intersection testing:
     Number of edges             : 170953
     Number of edges to retest   : 3998
     Number of intersected edges : 5136
-Refined mesh in = 0.080139 s
+Refined mesh in = 0.082451 s
 After refinement shell refinement iteration 1 : cells:50573  faces:170953  points:70057
 Cells per refinement level:
     0	6600
@@ -224,7 +224,7 @@ Shell refinement iteration 2
 
 Marked for refinement due to distance to explicit features : 0 cells.
 Marked for refinement due to refinement shells             : 0 cells.
-Determined cells to refine in = 0.008773 s
+Determined cells to refine in = 0.009181 s
 Selected for internal refinement : 0 cells (out of 50573)
 Stopping refining since too few cells selected.
 
@@ -232,13 +232,13 @@ Stopping refining since too few cells selected.
 Dangling coarse cells refinement iteration 0
 --------------------------------------------
 
-Determined cells to refine in = 0.001006 s
+Determined cells to refine in = 0.001023 s
 Selected for refinement : 3 cells (out of 50573)
 Edge intersection testing:
     Number of edges             : 170998
     Number of edges to retest   : 359
     Number of intersected edges : 5136
-Refined mesh in = 0.071414 s
+Refined mesh in = 0.072837 s
 After refinement coarse cell refinement iteration 0 : cells:50594  faces:170998  points:70063
 Cells per refinement level:
     0	6600
@@ -248,7 +248,7 @@ Cells per refinement level:
 Dangling coarse cells refinement iteration 1
 --------------------------------------------
 
-Determined cells to refine in = 0.001213 s
+Determined cells to refine in = 0.00126 s
 Selected for refinement : 0 cells (out of 50594)
 Stopping refining since too few cells selected.
 
@@ -256,7 +256,7 @@ Stopping refining since too few cells selected.
 Dangling coarse cells refinement iteration 0
 --------------------------------------------
 
-Determined cells to refine in = 0.00086 s
+Determined cells to refine in = 0.000856 s
 Selected for refinement : 0 cells (out of 50594)
 Stopping refining since too few cells selected.
 
@@ -270,7 +270,7 @@ Edge intersection testing:
     Number of edges             : 176054
     Number of edges to retest   : 33172
     Number of intersected edges : 10192
-Created baffles in = 0.085558 s
+Created baffles in = 0.090096 s
 
 
 After introducing baffles : cells:50594  faces:176054  points:70063
@@ -283,7 +283,7 @@ Introducing baffles to block off problem cells
 ----------------------------------------------
 
 markFacesOnProblemCells : marked 4946 additional internal faces to be converted into baffles.
-Analyzed problem cells in = 0.041991 s
+Analyzed problem cells in = 0.045642 s
 
 
 Introducing baffles to delete problem cells.
@@ -292,7 +292,7 @@ Edge intersection testing:
     Number of edges             : 181000
     Number of edges to retest   : 19484
     Number of intersected edges : 10192
-Created baffles in = 0.087931 s
+Created baffles in = 0.081769 s
 
 
 After introducing baffles : cells:50594  faces:181000  points:70063
@@ -310,7 +310,7 @@ Edge intersection testing:
     Number of edges             : 138397
     Number of edges to retest   : 0
     Number of intersected edges : 5136
-Split mesh in = 0.304453 s
+Split mesh in = 0.299282 s
 
 
 After subsetting : cells:40741  faces:138397  points:57777
@@ -328,7 +328,7 @@ Edge intersection testing:
     Number of edges             : 138397
     Number of edges to retest   : 17260
     Number of intersected edges : 5136
-Created baffles in = 0.053238 s
+Created baffles in = 0.054337 s
 
 
 After introducing baffles : cells:40741  faces:138397  points:57777
@@ -341,7 +341,7 @@ Introducing baffles to block off problem cells
 ----------------------------------------------
 
 markFacesOnProblemCells : marked 0 additional internal faces to be converted into baffles.
-Analyzed problem cells in = 0.030024 s
+Analyzed problem cells in = 0.032283 s
 
 
 Introducing baffles to delete problem cells.
@@ -350,7 +350,7 @@ Edge intersection testing:
     Number of edges             : 138397
     Number of edges to retest   : 0
     Number of intersected edges : 5136
-Created baffles in = 0.040043 s
+Created baffles in = 0.040625 s
 
 
 After introducing baffles : cells:40741  faces:138397  points:57777
@@ -362,7 +362,7 @@ Cells per refinement level:
 Remove unreachable sections of mesh
 -----------------------------------
 
-Split mesh in = 0.234238 s
+Split mesh in = 0.22753 s
 
 
 After subsetting : cells:40741  faces:138397  points:57777
@@ -377,7 +377,7 @@ Merge free-standing baffles
 freeStandingBaffles : detected 0 free-standing baffles out of 0
 
 Detected free-standing baffles : 0
-Merged free-standing baffles in = 0.014658 s
+Merged free-standing baffles in = 0.014736 s
 
 
 dupNonManifoldPoints : Found : 0 non-manifold points (out of 57777)
@@ -405,8 +405,8 @@ Cells per refinement level:
     1	20581
     2	13560
 Writing mesh to time constant
-Wrote mesh in = 0.169756 s.
-Mesh refined in = 1.70737 s.
+Wrote mesh in = 0.165022 s.
+Mesh refined in = 1.74059 s.
 
 Morphing phase
 --------------
@@ -445,7 +445,7 @@ Checking faces in error :
     faces with face twist < 0.02                           : 0
     faces on cells with determinant < 0.001                : 0
 Detected 0 illegal faces (concave, zero area or negative cell pyramid volume)
-Checked initial mesh in = 0.025797 s
+Checked initial mesh in = 0.02558 s
 
 
 Smoothing patch points ...
@@ -494,7 +494,7 @@ Checking faces in error :
     faces on cells with determinant < 0.001                : 0
 Successfully moved mesh
 
-Patch points smoothed in = 0.115935 s
+Patch points smoothed in = 0.114725 s
 
 
 
@@ -502,7 +502,7 @@ Morph iteration 0
 -----------------
 Calculating patchDisplacement as distance to nearest surface point ...
 Wanted displacement : average:6.97665e-05 min:9.49949e-11 max:0.000448619
-Calculated surface displacement in = 0.007268 s
+Calculated surface displacement in = 0.0069 s
 
 
 Detecting near surfaces ...
@@ -538,7 +538,7 @@ Iteration 60
 Iteration 70
 Iteration 80
 Iteration 90
-Displacement smoothed in = 0.128003 s
+Displacement smoothed in = 0.129188 s
 
 
 Moving mesh ...
@@ -554,7 +554,7 @@ Checking faces in error :
     faces with face twist < 0.02                           : 0
     faces on cells with determinant < 0.001                : 0
 Successfully moved mesh
-Moved mesh in = 0.029736 s
+Moved mesh in = 0.029158 s
 
 
 
@@ -562,7 +562,7 @@ Morph iteration 1
 -----------------
 Calculating patchDisplacement as distance to nearest surface point ...
 Wanted displacement : average:6.62429e-05 min:9.49949e-11 max:0.000440854
-Calculated surface displacement in = 0.006773 s
+Calculated surface displacement in = 0.007039 s
 
 
 Detecting near surfaces ...
@@ -598,7 +598,7 @@ Iteration 60
 Iteration 70
 Iteration 80
 Iteration 90
-Displacement smoothed in = 0.133233 s
+Displacement smoothed in = 0.128362 s
 
 
 Moving mesh ...
@@ -614,7 +614,7 @@ Checking faces in error :
     faces with face twist < 0.02                           : 0
     faces on cells with determinant < 0.001                : 0
 Successfully moved mesh
-Moved mesh in = 0.032699 s
+Moved mesh in = 0.029035 s
 
 
 
@@ -622,7 +622,7 @@ Morph iteration 2
 -----------------
 Calculating patchDisplacement as distance to nearest surface point ...
 Wanted displacement : average:5.87951e-05 min:9.49949e-11 max:0.000411846
-Calculated surface displacement in = 0.007251 s
+Calculated surface displacement in = 0.006962 s
 
 
 Detecting near surfaces ...
@@ -658,7 +658,7 @@ Iteration 60
 Iteration 70
 Iteration 80
 Iteration 90
-Displacement smoothed in = 0.131466 s
+Displacement smoothed in = 0.128887 s
 
 
 Moving mesh ...
@@ -674,7 +674,7 @@ Checking faces in error :
     faces with face twist < 0.02                           : 0
     faces on cells with determinant < 0.001                : 0
 Successfully moved mesh
-Moved mesh in = 0.028378 s
+Moved mesh in = 0.029001 s
 
 
 
@@ -682,7 +682,7 @@ Morph iteration 3
 -----------------
 Calculating patchDisplacement as distance to nearest surface point ...
 Wanted displacement : average:4.80596e-05 min:9.49949e-11 max:0.000353392
-Calculated surface displacement in = 0.006165 s
+Calculated surface displacement in = 0.006654 s
 
 
 Detecting near surfaces ...
@@ -717,7 +717,7 @@ Iteration 60
 Iteration 70
 Iteration 80
 Iteration 90
-Displacement smoothed in = 0.126007 s
+Displacement smoothed in = 0.125386 s
 
 
 Moving mesh ...
@@ -733,7 +733,7 @@ Checking faces in error :
     faces with face twist < 0.02                           : 0
     faces on cells with determinant < 0.001                : 0
 Successfully moved mesh
-Moved mesh in = 0.028959 s
+Moved mesh in = 0.028767 s
 
 
 
@@ -741,7 +741,7 @@ Morph iteration 4
 -----------------
 Calculating patchDisplacement as distance to nearest surface point ...
 Wanted displacement : average:3.55291e-05 min:9.49949e-11 max:0.00026728
-Calculated surface displacement in = 0.006018 s
+Calculated surface displacement in = 0.006363 s
 
 
 Detecting near surfaces ...
@@ -776,7 +776,7 @@ Iteration 60
 Iteration 70
 Iteration 80
 Iteration 90
-Displacement smoothed in = 0.124995 s
+Displacement smoothed in = 0.124357 s
 
 
 Moving mesh ...
@@ -792,7 +792,7 @@ Checking faces in error :
     faces with face twist < 0.02                           : 0
     faces on cells with determinant < 0.001                : 0
 Successfully moved mesh
-Moved mesh in = 0.028936 s
+Moved mesh in = 0.028511 s
 
 
 
@@ -800,7 +800,7 @@ Morph iteration 5
 -----------------
 Calculating patchDisplacement as distance to nearest surface point ...
 Wanted displacement : average:2.30716e-05 min:9.49949e-11 max:0.000168189
-Calculated surface displacement in = 0.005663 s
+Calculated surface displacement in = 0.005967 s
 
 
 Detecting near surfaces ...
@@ -835,7 +835,7 @@ Iteration 60
 Iteration 70
 Iteration 80
 Iteration 90
-Displacement smoothed in = 0.129221 s
+Displacement smoothed in = 0.122596 s
 
 
 Moving mesh ...
@@ -851,7 +851,7 @@ Checking faces in error :
     faces with face twist < 0.02                           : 0
     faces on cells with determinant < 0.001                : 0
 Successfully moved mesh
-Moved mesh in = 0.029188 s
+Moved mesh in = 0.028195 s
 
 
 
@@ -859,7 +859,7 @@ Morph iteration 6
 -----------------
 Calculating patchDisplacement as distance to nearest surface point ...
 Wanted displacement : average:1.26533e-05 min:9.49949e-11 max:8.0558e-05
-Calculated surface displacement in = 0.005685 s
+Calculated surface displacement in = 0.005503 s
 
 
 Detecting near surfaces ...
@@ -894,7 +894,7 @@ Iteration 60
 Iteration 70
 Iteration 80
 Iteration 90
-Displacement smoothed in = 0.124735 s
+Displacement smoothed in = 0.122109 s
 
 
 Moving mesh ...
@@ -910,7 +910,7 @@ Checking faces in error :
     faces with face twist < 0.02                           : 0
     faces on cells with determinant < 0.001                : 0
 Successfully moved mesh
-Moved mesh in = 0.027903 s
+Moved mesh in = 0.028659 s
 
 
 
@@ -918,7 +918,7 @@ Morph iteration 7
 -----------------
 Calculating patchDisplacement as distance to nearest surface point ...
 Wanted displacement : average:5.5396e-06 min:9.49949e-11 max:2.50913e-05
-Calculated surface displacement in = 0.005683 s
+Calculated surface displacement in = 0.005367 s
 
 
 Detecting near surfaces ...
@@ -953,7 +953,7 @@ Iteration 60
 Iteration 70
 Iteration 80
 Iteration 90
-Displacement smoothed in = 0.126254 s
+Displacement smoothed in = 0.129444 s
 
 
 Moving mesh ...
@@ -969,7 +969,7 @@ Checking faces in error :
     faces with face twist < 0.02                           : 0
     faces on cells with determinant < 0.001                : 0
 Successfully moved mesh
-Moved mesh in = 0.029714 s
+Moved mesh in = 0.028457 s
 
 
 
@@ -977,7 +977,7 @@ Morph iteration 8
 -----------------
 Calculating patchDisplacement as distance to nearest surface point ...
 Wanted displacement : average:1.73521e-06 min:9.49949e-11 max:8.65586e-06
-Calculated surface displacement in = 0.004806 s
+Calculated surface displacement in = 0.005013 s
 
 
 Detecting near surfaces ...
@@ -1012,7 +1012,7 @@ Iteration 60
 Iteration 70
 Iteration 80
 Iteration 90
-Displacement smoothed in = 0.128221 s
+Displacement smoothed in = 0.124473 s
 
 
 Moving mesh ...
@@ -1028,7 +1028,7 @@ Checking faces in error :
     faces with face twist < 0.02                           : 0
     faces on cells with determinant < 0.001                : 0
 Successfully moved mesh
-Moved mesh in = 0.031584 s
+Moved mesh in = 0.027962 s
 
 
 
@@ -1036,7 +1036,7 @@ Morph iteration 9
 -----------------
 Calculating patchDisplacement as distance to nearest surface point ...
 Wanted displacement : average:3.44331e-07 min:9.49949e-11 max:1.90348e-06
-Calculated surface displacement in = 0.004795 s
+Calculated surface displacement in = 0.004957 s
 
 
 Detecting near surfaces ...
@@ -1071,7 +1071,7 @@ Iteration 60
 Iteration 70
 Iteration 80
 Iteration 90
-Displacement smoothed in = 0.122848 s
+Displacement smoothed in = 0.120682 s
 
 
 Moving mesh ...
@@ -1087,11 +1087,11 @@ Checking faces in error :
     faces with face twist < 0.02                           : 0
     faces on cells with determinant < 0.001                : 0
 Successfully moved mesh
-Moved mesh in = 0.031187 s
+Moved mesh in = 0.028522 s
 
 
 Repatching faces according to nearest surface ...
-Repatched 0 faces in = 0.007243 s
+Repatched 0 faces in = 0.007127 s
 
 
 Edge intersection testing:
@@ -1143,8 +1143,8 @@ Cells per refinement level:
     1	20581
     2	13560
 Writing mesh to time constant
-Wrote mesh in = 0.306625 s.
-Mesh snapped in = 2.08897 s.
+Wrote mesh in = 0.301779 s.
+Mesh snapped in = 2.05168 s.
 Layer thickness specified as final layer and expansion ratio.
 
 Shrinking and layer addition phase
@@ -1352,8 +1352,8 @@ Cells per refinement level:
     1	20581
     2	20984
 Writing mesh to time constant
-Wrote mesh in = 0.493138 s.
-Layers added in = 0.493137 s.
+Wrote mesh in = 0.504953 s.
+Layers added in = 0.50495 s.
 Checking final mesh ...
 Checking faces in error :
     non-orthogonality > 65  degrees                        : 0
@@ -1364,6 +1364,6 @@ Checking faces in error :
     faces with face twist < 0.02                           : 0
     faces on cells with determinant < 0.001                : 0
 Finished meshing without any errors
-Finished meshing in = 4.41446 s.
+Finished meshing in = 4.44168 s.
 End
 
