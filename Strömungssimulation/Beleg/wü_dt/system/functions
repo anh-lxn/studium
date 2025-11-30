@@ -1,0 +1,51 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  12
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      functions;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+// include packaged functionObjects using #includeFunc
+// #includeFunc
+#includeFunc residuals
+#includeFunc writeObjects
+
+#includeFunc wallShearStress
+#includeFunc wallHeatFlux
+#includeFunc yPlus
+
+#includeFunc forcesPipe
+
+#includeFunc avgPres
+#includeFunc avgTemp
+
+#includeFunc avgWSS
+#includeFunc avgWHF
+#includeFunc intWHF
+
+#includeFunc maxPres_pipe0
+#includeFunc maxPres_pipe1
+#includeFunc maxPres_pipe2
+#includeFunc maxPres_pipe3
+#includeFunc maxPres_pipe4
+#includeFunc maxPres_pipe5
+
+#includeFunc minPres_pipe0
+#includeFunc minPres_pipe1
+#includeFunc minPres_pipe2
+#includeFunc minPres_pipe3
+#includeFunc minPres_pipe4
+#includeFunc minPres_pipe5
+
+#includeFunc cellMax
+#includeFunc volAverage
+// ************************************************************************* //

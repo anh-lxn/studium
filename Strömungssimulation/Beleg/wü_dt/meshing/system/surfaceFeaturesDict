@@ -1,0 +1,39 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  12
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      surfaceFeaturesDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+// DONE: Geben Sie hier den Namen der Geometrie-Datei aus constant/triSurfae ein.
+surfaces
+(
+    "domain_a3_b1.stl"
+);
+
+includedAngle   150;
+
+subsetFeatures
+{
+    nonManifoldEdges yes;
+    openEdges        yes;
+}
+
+trimFeatures
+{
+    minElem         0;
+    minLen          0;
+}
+
+writeObj        yes;
+
+// ************************************************************************* //

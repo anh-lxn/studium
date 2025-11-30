@@ -1,0 +1,31 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  12
+     \\/     M anipulation  |
+-------------------------------------------------------------------------------
+Description
+    Calculates the area averaged wall heat flux at patches.
+
+\*---------------------------------------------------------------------------*/
+
+type            surfaceFieldValue;
+libs            ("libfieldFunctionObjects.so");
+
+log             true;
+writeControl    timeStep;
+writeInterval	10;
+writeFields     false;
+
+select          patch;
+name            "pipe.*";
+
+operation       areaAverage;
+
+fields
+(
+    wallHeatFlux
+);
+
+// ************************************************************************* //
