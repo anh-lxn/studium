@@ -1,0 +1,42 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  12
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      functions;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+#includeFunc residuals
+#includeFunc probes
+#includeFunc yPlus
+
+scalarTransport
+{
+	type scalarTransport;
+	libs ("libsolverFunctionObjects.so");
+
+	enabled	true;
+	writeControl	writeTime;
+
+	log	yes;
+	
+	diffusivity viscosity;
+	//diffusion coefficient
+	//D = alphal * nu + alphat *nut
+	alphal	1.43;
+	alphat	1;	
+	field	s;
+
+	schemesField	k;
+
+}
+
+// ************************************************************************* //
