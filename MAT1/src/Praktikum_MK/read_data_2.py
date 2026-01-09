@@ -2,7 +2,7 @@ import serial
 import csv
 import time
 
-ser = serial.Serial("COM7", 9600, timeout=1)  # COM-Port anpassen
+ser = serial.Serial("COM3", 9600, timeout=1)  # COM-Port anpassen
 time.sleep(2)  # Arduino Reset abwarten
 
 with open("messung2.csv", "w", newline="") as f:
