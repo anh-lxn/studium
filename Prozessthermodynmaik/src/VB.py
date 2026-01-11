@@ -1,1 +1,0 @@
-# Formeln der Verbrennung
