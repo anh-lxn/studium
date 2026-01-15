@@ -1,0 +1,43 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  12
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      functions;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+#includeFunc residuals
+#includeFunc fieldAverage
+
+    forceCoeffs
+    {
+        type            forceCoeffs;
+        libs            ( "libforces.so" );
+        writeControl    timeStep;
+	writeInterval	10;
+        patches         ( obstacle );            
+        porosity        no;
+        rho             rhoInf;
+        log             true;
+        rhoInf          1;
+        CofR            ( 0 0 0 );
+        liftDir         ( 0 1 0 );              
+        dragDir         ( 1.0 0.0 0 );          
+        pitchAxis       ( 0 0 1 );
+        magUInf         0.2;                    
+        lRef            5;                      
+        Aref            5;                      
+        p               p;
+        U               U;
+    }
+#includeFunc vorticity
+
+// ************************************************************************* //
